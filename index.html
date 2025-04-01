@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cartão de Reforço Escolar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('fundo.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      width: 350px;
+      padding: 20px;
+      background: rgba(236, 195, 207, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #E91E63;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      margin: 10px 0;
+      color: #E91E63;
+    }
+
+    .subtitle {
+      font-size: 1em;
+      font-weight: bold;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .services {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .contact {
+      font-size: 0.9em;
+      color: #1B5E20;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      font-size: 0.90em;
+      font-style: bold;
+      color: #777;
+    }
+
+    .whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebd5a;
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="mamae.jpg" alt="Professora Maria Helaine" class="profile-pic">
+    <h1>Profª. Maria Helaine</h1>
+    <div class="subtitle">Reforço Escolar & Alfabetização</div>
+    <div class="services">
+      • Correção de lições de casa<br>
+      • Auxílio na leitura<br>
+      • Matemática lúdica<br>
+      • Desenvolvimento da escrita<br>
+      • Apoio a alunos autistas e neurodiversos
+    </div>
+    <a href="https://wa.me/559991788644" target="_blank" class="whatsapp-button">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+      Matricule seu filho agora!
+    </a>
+    <div class="cta"><br>
+      “Despertando o prazer de aprender em cada criança!”
+    </div>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
